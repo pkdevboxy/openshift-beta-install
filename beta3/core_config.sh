@@ -6,7 +6,6 @@ if [[ $EUID -ne 0  ]]; then
 fi
 
 
-
 subscription-manager repos --disable="*"
 subscription-manager repos \
 	--enable="rhel-7-server-rpms" \
