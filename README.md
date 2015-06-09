@@ -4,7 +4,12 @@ A set of scripts that automate the steps in the ````openshift/training```` demos
 ## Instructions
 Here's how to use them:
 
-1.  Before runnning, you'll need to provision at least one system running Red Hat Enterprise Linux 7 in a VM. These systems should have at least 20GB of storage and 2GB of RAM each (preferably 4GB or more). This system can be running on VirtualBox, Boxes, or VMware. Alternatively, with a bit more configuration, you can also use these scripts to deploy OpenShift Enterprise v3 Beta 4 on an IaaS platform like OpenStack, **with some minor changes**.
+1. Provision an environment with:
+  - 3 VMs (2 CPU Cores, 4GB RAM, 20GB Disk Space each)
+  - RHEL 7.1 Minimal Install on each
+  - Same NAT network
+
+  You can do this locally using a virtualization program like VMware or Virtualbox. This can also be done on an IaaS service, like Amazon AWS or OpenStack, but it will require [additional changes](https://github.com/openshift/training/blob/master/beta-4-setup.md#appendix---installing-in-iaas-clouds).
 
 1. Be sure to register your system and attach it:
   ````
@@ -68,7 +73,7 @@ Here's how to use them:
 ### Things You Need to Do After Installing
 
 To have a fully working deployment, you will need to:
-  - Configure DNS ([see here](https://github.com/openshift/training/blob/master/beta-3-setup.md#dns))
+  - Configure DNS ([see here](https://github.com/openshift/training/blob/master/beta-4-setup.md#dns))
   - Add users and set their passwords
   - Deploy an application
   - Add builder images, templates, and anything else you want to use
