@@ -67,8 +67,8 @@ Here's how to use them:
 
 ### Things You Need to Do After Installing
 
-To have a fully working deployment, you will need to finish:
-  - Configuring DNS (using DNSMasq or creating forward records)
+To have a fully working deployment, you will need to:
+  - Configure DNS ([see here](https://github.com/openshift/training/blob/master/beta-3-setup.md#dns))
   - Add users and set their passwords
   - Deploy an application
   - Add builder images, templates, and anything else you want to use
